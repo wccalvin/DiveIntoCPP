@@ -10,7 +10,7 @@
 		"-std=c++23", // latest C++ standard
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/a"
             ],
             "options": {
                 "cwd": "${fileDirname}"
