@@ -16,6 +16,7 @@
 void printTypeAndSizeInfo(auto& var) {
   size_t size = sizeof(var);
   std::cout << "-------" << std::endl;
+  std::cout << "Value of variable: " << var << std::endl;
   std::cout << "Type of variable: " << typeid(var).name() << std::endl;
   std::cout << "Size of variable: " << size << " bytes or " << size * 8
             << " bits" << std::endl;
@@ -23,8 +24,11 @@ void printTypeAndSizeInfo(auto& var) {
 }
 
 int main() {
-  int a = 0;
+  int a = -5;
   printTypeAndSizeInfo(a);
+
+  unsigned int h = 3;
+  printTypeAndSizeInfo(h);
 
   char b = 0;
   printTypeAndSizeInfo(b);
