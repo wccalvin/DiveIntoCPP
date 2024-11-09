@@ -5,7 +5,7 @@ using namespace std;  // using just for example purposes
 
 int main() {
   // first program (an example of single line comments)
-  cout << setw(20) << "---> 1 <---" << endl;  // formatting output
+  cout << setw(20) << "---> 1 <---" << endl;
   // cout << "--------------> 1 <--------------" << endl;
   cout << "hello, world!" << endl;
   cout << endl;
@@ -50,7 +50,18 @@ int main() {
   cout << endl;
 
   cout << setw(20) << "---> 5 <---" << endl;  // formatting output
+  int a = 45;
+  float b = 45.323;
+  double c = 45.5468;
+  std::cout << "Ints" << std::setw(10);
+  std::cout << "Floats" << std::setw(10);
+  std::cout << "Doubles" << std::setw(10) << "\n";
+
+  std::cout << a;
+  std::cout << std::setw(12) << b;
+  std::cout << std::setw(10) << c << "\n";
   cout << endl;
 
+  cout << setw(20) << "---> 6 <---" << endl;
   return 0;
 }
