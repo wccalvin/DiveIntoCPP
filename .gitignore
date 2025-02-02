@@ -2,6 +2,7 @@ a
 inp.txt
 out.txt
 *.dSYM
+*.pdf
 
 # Prerequisites
 *.d
