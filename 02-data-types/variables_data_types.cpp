@@ -12,15 +12,16 @@
 #include <iostream>
 #include <string>
 #include <typeinfo>
+using namespace std;
 
 void printTypeAndSizeInfo(auto& var) {
   size_t size = sizeof(var);
-  std::cout << "-------" << std::endl;
-  std::cout << "Value of variable: " << var << std::endl;
-  std::cout << "Type of variable: " << typeid(var).name() << std::endl;
-  std::cout << "Size of variable: " << size << " bytes or " << size * 8
-            << " bits" << std::endl;
-  std::cout << "-------" << std::endl;
+  cout << "-------" << endl;
+  cout << "Value of variable: " << var << endl;
+  cout << "Type of variable: " << typeid(var).name() << endl;
+  cout << "Size of variable: " << size << " bytes or " << size * 8 << " bits"
+       << endl;
+  cout << "-------" << endl;
 }
 
 int main() {
@@ -45,10 +46,10 @@ int main() {
   bool f = true;
   printTypeAndSizeInfo(f);
 
-  std::string g = "hello";
+  string g = "hello";
   printTypeAndSizeInfo(g);
 
-  std::cout << std::endl;
-  std::cout << std::endl;
+  cout << endl;
+  cout << endl;
   return 0;
 }

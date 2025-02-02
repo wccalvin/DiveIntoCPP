@@ -1,7 +1,7 @@
 #include <iomanip>  // for formatting output
 #include <iostream>
 #include <string>
-using namespace std;  // using just for example purposes
+using namespace std;
 
 int main() {
   // first program (an example of single line comments)
@@ -18,18 +18,18 @@ int main() {
 
   // variables
   cout << setw(20) << "---> 2 <---" << endl;  // formatting output
-  cout << "int: " << sizeof(int) << " bytes" << endl;
-  cout << "short: " << sizeof(short) << " bytes" << endl;
-  cout << "long: " << sizeof(long) << " bytes" << endl;
-  cout << "char: " << sizeof(char) << " bytes" << endl;
-  cout << "float: " << sizeof(float) << " bytes" << endl;
-  cout << "double: " << sizeof(double) << " bytes" << endl;
-  cout << "bool: " << sizeof(bool) << " bytes" << endl;
+  cout << setw(20) << "int: " << sizeof(int) << " bytes" << endl;
+  cout << setw(20) << "short: " << sizeof(short) << " bytes" << endl;
+  cout << setw(20) << "long: " << sizeof(long) << " bytes" << endl;
+  cout << setw(20) << "char: " << sizeof(char) << " bytes" << endl;
+  cout << setw(20) << "float: " << sizeof(float) << " bytes" << endl;
+  cout << setw(20) << "double: " << sizeof(double) << " bytes" << endl;
+  cout << setw(20) << "bool: " << sizeof(bool) << " bytes" << endl;
   cout << endl;
 
   cout << setw(20) << "---> 3 <---" << endl;  // formatting output
   // const variable cannot be changed
-  const std::string name = "clayton";
+  const string name = "clayton";
   cout << name << endl;
   cout << endl;
 
@@ -53,13 +53,13 @@ int main() {
   int a = 45;
   float b = 45.323;
   double c = 45.5468;
-  std::cout << "Ints" << std::setw(10);
-  std::cout << "Floats" << std::setw(10);
-  std::cout << "Doubles" << std::setw(10) << "\n";
+  cout << "Ints" << setw(10);
+  cout << "Floats" << setw(10);
+  cout << "Doubles" << setw(10) << "\n";
 
-  std::cout << a;
-  std::cout << std::setw(12) << b;
-  std::cout << std::setw(10) << c << "\n";
+  cout << a;
+  cout << setw(12) << b;
+  cout << setw(10) << c << "\n";
   cout << endl;
 
   cout << setw(20) << "---> 6 <---" << endl;
