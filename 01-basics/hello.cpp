@@ -2,15 +2,17 @@
 #include <string>
 #include <vector>
 
-int main() {
-  std::vector<std::string> msg{"Hello", "C++",     "World",
-                               "from",  "VS Code", "and the C++ extension!"};
+using namespace std;
 
-  for (const std::string &word : msg) {
-    std::cout << word << " ";
+int main() {
+  vector<string> msg{"Hello", "C++",     "World",
+                     "from",  "VS Code", "and the C++ extension!"};
+
+  for (const string &word : msg) {
+    cout << word << " ";
   }
-  std::cout << std::endl;
-  std::cout << "---" << std::endl;
-  std::cout << std::endl;
-  std::cout << std::endl;
+  cout << endl;
+  cout << "---" << endl;
+  cout << endl;
+  cout << endl;
 }
