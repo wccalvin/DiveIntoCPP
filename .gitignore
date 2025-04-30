@@ -1,4 +1,5 @@
 a
+*.out
 inp.txt
 out.txt
 *.dSYM
